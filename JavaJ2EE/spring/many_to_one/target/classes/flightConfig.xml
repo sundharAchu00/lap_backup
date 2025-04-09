@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="edu.jsp.flight.Flight" id="f1" c:id="1" c:name="Boeing" c:from="chennai" c:to="Bangkok" c:pilot="mukundan"/>
+	
+	<bean class="edu.jsp.flight.Passenger" id="p1" c:id="1" c:name="Sundhar Raj" c:age="22" c:gender="male" >
+		<constructor-arg name="flight" ref="f1"/>
+	</bean>
+	<bean class="edu.jsp.flight.Passenger" id="p2" c:id="2" c:name="Mark mama" c:age="45" c:gender="male" >
+		<constructor-arg name="flight" ref="f1"/>
+	</bean>
+	<bean class="edu.jsp.flight.Passenger" id="p3" c:id="3" c:name="Elon Musk Periyappa" c:age="54" c:gender="male" >
+		<constructor-arg name="flight" ref="f1"/>
+	</bean>
+	
+</beans>

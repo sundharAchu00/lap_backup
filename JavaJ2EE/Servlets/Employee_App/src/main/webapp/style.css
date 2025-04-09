@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* nav bar section*/
+
+.navBlock{
+	height: 65px;
+	width: 100%;
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.navBlock > .navlist{
+	height: inherit;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navBlock > .navlist > ul{
+	display: flex;
+}
+
+.navBlock > .navlist > ul > li{
+	list-style: none;
+	margin: 0px 10px 0pc 10px;
+	
+}
+.navBlock > .navlist > ul > li > a{
+	text-decoration : none;
+	color: gray;
+}
+.navBlock > .navlist > ul > li > a:hover{
+	color: #C2C2C2;
+}
+
+/* main section*/
+
+.mainBlk {
+	height : 80vh;
+	background-image: url("https://testyantraglobal.com/wp-content/uploads/2022/03/training_01-1280x960.jpg");
+}

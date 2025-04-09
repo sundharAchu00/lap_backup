@@ -1,0 +1,57 @@
+/* p::first-line{
+    color: blue;
+    font-size: 25px;
+}
+p::first-letter{
+    color: tomato;
+    font-weight: bold;
+}
+p::before{
+    content: url("https://cdn.pixabay.com/photo/2023/04/26/16/57/flower-7952897_1280.jpg"); 
+}
+p::selection{
+    background-color: chartreuse;
+    color: black;
+}
+p::after{
+    content: "jagan";
+    font-size: larger;
+    font-weight: bolder;
+    color: chocolate;
+}
+ul li::marker{
+    font-size: 20px;
+    color: red;
+}*/
+/* [href]{
+    background-color: bisque;
+    color: darkblue;
+}
+[target]{
+    color: brown;
+}  */
+
+/* [class=nav]{
+    color: brown;
+    background-color: aqua;
+} */
+/* [class~=nav]{
+    color: cyan;
+    background-color: thistle;
+} */
+/* [class|=nav]{
+    color: violet;
+    background-color: steelblue;
+} */
+/* [class^=nav]{
+    color: chartreuse;
+    background-color: slategray;
+} */
+/* [class$=nav]{
+    color: yellow;
+    background-color: saddlebrown;
+} */
+/* [class*=nav]{
+    color: wheat;
+    background-color: red;
+} */

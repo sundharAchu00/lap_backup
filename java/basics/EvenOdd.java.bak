@@ -1,0 +1,10 @@
+class EvenOdd 
+{
+	public static void main(String[] args) 
+	{
+		int a=6;
+		System.out.println("the given number is:"+a);
+		String res= (a%2==0)?" Even:":" Odd:";
+		System.out.println("the given number is :"+res);
+	}
+}

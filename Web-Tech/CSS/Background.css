@@ -1,0 +1,66 @@
+/* body{
+    height: 100%;
+    width: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2023/04/13/07/21/tree-7921887_640.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2023/05/04/12/57/landscape-7970076_640.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}  */
+/* div{
+    background-color: grey;
+    background-image: url("https://cdn.pixabay.com/photo/2023/05/04/12/57/landscape-7970076_640.jpg"); 
+    background:-webkit-linear-gradient(left,red,yellow,cyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box; 
+    padding: 40px;
+    border: 5px dotted yellow;
+} */
+body{
+    height: 100px;
+    width: 100vh;
+    background-image:linear-gradient(to bottom,rgba(5, 1, 1, 0.509),rgba(255, 0, 0, 0.5)),url("https://cdn.pixabay.com/photo/2023/05/03/19/57/passau-7968535_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-attachment: scroll; */
+    /* height: 100vh;
+    width: 100vh;
+    background-image:repeating-linear-gradient(45deg,rgb(234, 121, 121),blue ,cyan 10%); */
+}
+nav{
+    background-color: rgba(224, 73, 47,0.4);
+    height: 75px;
+    width: 200%;
+    line-height: 75px;
+    padding: 0px 50px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(40, 23, 23);
+    letter-spacing: 1.9px;
+    word-spacing: 10px;
+}
+nav ul li{
+    display: inline-block;
+    color: black;
+}
+nav ul{
+    float: right;
+}
+nav p{
+    float: left;
+}
+*{
+    margin:0%;
+    padding: 0%;
+}
+nav ul li a{
+    color: rgb(244, 240, 240);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: black;
+}

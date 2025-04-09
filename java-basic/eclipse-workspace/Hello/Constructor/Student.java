@@ -1,0 +1,25 @@
+package Constructor;
+
+public class Student {
+	String sname;
+	int sid;
+	double smarks;
+	static String s_name="xyz";
+
+	public Student() {
+
+	}
+	public Student(String sname,int sid,double smarks) {
+
+		this.sname=sname;
+		this.sid=sid;
+		this.smarks=smarks;
+	}
+public void detailsOfStudent(){
+	System.out.println("Student name: "+sname);
+	System.out.println("Student id: "+sid);
+	System.out.println("Student marls: "+smarks);
+	System.out.println("School Name is: "+s_name);
+	}
+
+}

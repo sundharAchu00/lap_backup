@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="edu.jsp.autoWiring.Engine" id="engine1" p:cc="350cc" p:engineNumber="12346fd" p:type="'2 Stroke'"/>
+	<bean class="edu.jsp.autoWiring.Engine" id="engine2" p:cc="150cc" p:engineNumber="98765fxd" p:type="'5 Stroke'"/>
+	
+	<bean class="edu.jsp.autoWiring.Bike" id="b1" p:name="Yamaha" p:model="RX-100" autowire="byName"></bean>
+
+</beans>

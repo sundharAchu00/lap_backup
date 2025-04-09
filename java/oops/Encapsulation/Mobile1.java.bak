@@ -1,0 +1,12 @@
+class Mobile1
+{
+	String name,ram,storage;
+	double price;
+
+	public Mobile1(String name,String ram,String storage,double price){
+		this.name=name;
+		this.ram=ram;
+		this.storage=storage;
+		this.price=price;
+	}
+}  

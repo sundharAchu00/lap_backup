@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    height: 200px;
+    width: 250px;
+    border: 2px solid red;
+    margin: 50px 50px;
+    overflow:auto;
+}
+img{
+    height: 200px;
+    width: 250px;
+    float: left;
+}
+.img{
+    float: left;
+}
+#fil{
+    height: 200px;
+    width: 100px;
+    object-fit: contain;
+}

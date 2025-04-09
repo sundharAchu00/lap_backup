@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+article{
+    height: 400px;
+    width: 600px;
+    background-color: aqua;
+    border: 2px solid;
+    position: relative;
+    left: 300px;
+}
+article > div{
+    height: 350px;
+    width: 500px;
+    background-color: bisque;
+    border: 2px solid;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.com{
+    height: 300px;
+    width: 150px;
+    border: 2px solid;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    display: inline-block;
+}
+.d1{
+    /* float: left; */
+}
+.d2{
+    /* float: right; */
+}
+.d3{
+    /* margin: 50px; */
+}

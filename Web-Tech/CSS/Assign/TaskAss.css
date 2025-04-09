@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(45deg,rgba(243, 98, 166, 0.5),rgba(202, 141, 27, 0.5)),url("https://cdn.pixabay.com/photo/2020/03/19/18/20/motocross-4948269_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(21, 120, 12);
+}
+.nav-block{
+    width: 100%;
+    height: 70px;
+}
+.nav-block > article{
+    /* border: 2px solid; */
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+}
+.nav-block > article .logo-block{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(21, 120, 12);
+}
+.nav-block > article > .menu-block{
+    height: inherit;
+    flex-basis: 65%;
+}
+.menu-block > ul{
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-block > ul > li > a{
+    text-decoration: none;
+    color: rgb(21, 120, 12);
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menu-block > ul > li > a:hover{
+    color: rgba(61, 110, 110, 0.685);
+}
+/* nav block ends here */
+
+/* summary block start here  */
+.about{
+    width: 100%;
+    height: 30vh;
+    /* border: 2px solid red; */
+    display: flex;
+}
+.about > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about > .Profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+.about > .Profile > img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+}
+/* summary ends here */
+/* contact starts here */
+.cont-block > article{
+    width: 100%;
+    height: 30vh;
+    /* border: 2px solid blue; */
+    display: flex;
+}
+.cont-block > article >.photo img{
+    height: inherit;
+    width: 170px;
+    object-fit: cover;
+}
+.cont-block > article >.photo{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-block > article > .contact{
+    height: inherit;
+    /* display: flex; */
+    /* border: 2px solid red; */
+    flex-basis: 80%;
+}
+#cont-button{
+    flex-basis: 70%;
+    display: flex;
+    height: inherit;
+    /* border: 2px solid yellowgreen; */
+    align-items: center;
+}
+#cont-button > .Cbutton{
+    border-style: none;
+    border-radius: 2px;
+    /* background-color: aqua; */
+    margin: 0px 5px;
+    position: relative;
+    left: 800px;
+}
+#cont-button > .Cbutton > a{
+    text-decoration: none;
+    color: black;
+    /* padding-left: 10px; */
+}
+.cont-block > article > .contact {
+    display: flex;
+    flex-direction: column;
+}
+.socialLinks{
+    padding:20px 0px 0px 90px;
+}
+.socialLinks > a{
+    text-decoration: none;
+}
+.socialLinks > a > i{
+    /* background-color: violet; */
+    color: rgb(21, 66, 92);
+    margin-left: 10px;
+    display: inline;
+}
+#conta{
+    border-style: none;
+    border-bottom: 1px solid;
+}
+#whatsapp{
+    border-style: none;
+    border-bottom: 1px solid;
+}
+/* contact ends here */
+/* details starts here */
+.det > article{
+    padding-top: 40px;
+}
+.det > article > p{
+    text-indent: 50px;
+    text-align: justify;
+    padding: 20px 18px;
+}
+.footer {
+    /* border: 2px solid red;  */
+    height: 80vh;
+}
+.footer > article > .registration{
+    height: inherit;
+    width: 300px;
+    box-sizing: content-box;
+    /* border: 2px solid violet; */
+    position: relative;
+    left: 450px;
+    top: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.footer > article > .registration > .regform > h4{
+    text-align: center;
+}
+.footer > article > .registration > span  a > button{
+    position: relative;
+    /* background-color: yellow; */
+    border-style: none;
+    top: 50px;
+    left: 500px;
+}
+/* details ends here */

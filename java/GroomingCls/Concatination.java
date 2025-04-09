@@ -1,0 +1,30 @@
+import java.util.*;
+class Concatination 
+{
+	static Scanner s=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		for (int i=1;i<=100 ;i++ )
+		{
+			if (i==0||i==1)
+			 System.out.println("neither prime nor composite");
+			else if (isPrime(i))
+			{
+				System.out.println("prime "+i);
+			}
+		}
+	}
+	public static boolean isPrime(int n){
+		boolean res=true;
+		for (int i=2;i<n ;i++ )
+		{
+			if (n%i==0)
+			{
+				res=false;
+				break;
+			}
+		}
+		return res;
+	}
+}
+

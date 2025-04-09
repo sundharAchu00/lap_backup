@@ -1,0 +1,26 @@
+class PatAss4
+{
+	public static void main(String[] args) throws Exception
+	{
+		int n=5;
+		char ch='A';
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (j%2==0)
+				{  
+					Thread.sleep(500);
+					System.out.print("* ");
+				
+				}
+				else
+				{
+					Thread.sleep(500);
+					System.out.print(ch++ +" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

@@ -1,0 +1,35 @@
+import java.util.*;
+class LargestThree 
+{
+	static Scanner s=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("enter a value");
+		int a=s.nextInt();
+		System.out.println("enter a value");
+		int b=s.nextInt();
+		System.out.println("enter a value");
+		int c=s.nextInt();
+		if (a>b&&a>c)
+		{//a is 1st laregst
+			if (b>c)
+				System.out.println("C is the third largest "+c);
+			else 
+				System.out.println("Bis the third largest "+b);
+		}
+		else if (b>c)
+		{
+			if (a>c)
+			System.out.println("C is third largest "+c);
+			else
+				System.out.println("A is third largest"+a);
+		}
+		else if (a>b)
+		{
+			System.out.println("B is the third larest "+b);
+		}
+			else{
+				System.out.println("A is the third largest "+a);
+			}
+	}
+}

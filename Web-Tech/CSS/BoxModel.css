@@ -1,0 +1,43 @@
+/* div{
+    height: 100px;
+    width: 150px;
+    border: 2px solid red;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding: 20px 40px;
+}
+button{
+    padding: 8px 10px;
+} */
+div{
+    height: 100px;
+    width: 150px;
+    border: 2px solid red;
+    background-color: bisque;
+    padding: 20px;
+    visibility: visible;
+    /* display: none; */
+    margin: 100px 200px;
+    /* box-shadow:0px 0px 0px 0px blue ; */
+}
+*{
+    box-sizing: border-box;
+    /* margin: 0px; */
+    padding: 0px;
+} 
+/* p{
+    height: 100px;
+    width: 50vh;
+    border:2px dotted yellow;
+    padding: 7px;
+} */
+/* *{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+} */
+h1{
+    visibility: visible;
+}

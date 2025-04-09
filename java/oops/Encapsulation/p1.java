@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class p1 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int rev=0;
+		System.out.println("enter a number ");
+		int num=sc.nextInt();
+		//p2 d=new p2(num);
+		//System.out.println(d.a);
+		//System.out.println("Hello World!");
+		for (int i=num;i>0 ; i/=10)
+		{
+			System.out.println("ini"+rev);
+			System.out.println("i "+i%10);
+			rev*=10+(i%10);
+			System.out.println(rev);
+		}
+		if(rev==num){
+			System.out.println("palindrome");
+		}else{
+			System.out.println("Not palindrome");
+		}
+	}
+}

@@ -1,0 +1,102 @@
+class Add 
+{
+	public static void main(String[] args)throws Exception
+	{
+		System.out.println("This is addition operations");
+		Thread.sleep(2000);
+		Add1.main(args);
+		Thread.sleep(3000);
+		Add2.main(args);
+		Thread.sleep(3000);
+		Add3.main(args);
+		Thread.sleep(3000);
+		Add4.main(args);
+		Thread.sleep(3000);
+		Add5.main(args);
+		Thread.sleep(3000);
+		Add6.main(args);
+		Thread.sleep(3000);
+		Add7.main(args);
+		
+	}
+}
+
+class Add1
+{
+	public static void main(String[] args)
+	{
+		byte a=10;
+		int res1=a+a;
+		System.out.println("short+short ------>int");
+		System.out.println(res1);
+	}
+}
+
+class Add2
+{
+	public static void main(String[] args)
+	{
+		short b=20;
+		int res2=b+b;
+		System.out.println("short+short------>int");
+		System.out.println(res2);
+
+	}
+}
+
+class Add3
+{
+	public static void main(String[] args)
+	{
+		int c=30;
+		int res3=c+c;
+		System.out.println("int+iint ------>int");
+		System.out.println(res3);
+
+	}
+}
+
+class Add4
+{
+	public static void main(String[] args)
+	{
+		long d=40;
+		long res4=d+d;
+		System.out.println("long +long------>long");
+		System.out.println(res4);
+	}
+}
+
+class Add5
+{
+	public static void main(String[] args)
+	{
+		float e=50.25f;
+		float res5=e+e;
+		System.out.println("float+float------>float");
+		System.out.println(res5);
+	}
+
+}
+
+class Add6
+{
+	public static void main(String[] args)
+	{
+		double f=60.35;
+		double res6=f+f;
+		System.out.println("double+double----->double");
+		System.out.println(res6);
+	}
+}
+
+class Add7
+{
+	public static void main(String[] args)
+	{
+		char g='b';
+		int res7=g+g;
+		System.out.println("char+char---->int");
+		System.out.println(res7);
+	}
+}

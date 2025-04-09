@@ -1,0 +1,19 @@
+div{
+    /* border-width: 10px;
+    height: 150px;
+    border-color: red;
+    border-style: double; */
+    /* border: 2px solid red; */
+
+    height: 100px;
+    width: 150px;
+    border-top-width: 10px;
+    border-top-style:ridge;
+    border-top-color: tomato;
+    border-right: 12px;
+    border-right-style: dotted;
+    border-right-color: yellow;
+    border-left: 10px solid green;
+    /* border: 12px dotted blueviolet; */
+    border-bottom: 10px outset violet;
+}

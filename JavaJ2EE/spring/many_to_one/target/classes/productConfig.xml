@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="edu.jsp.product.Brand" id="b1" p:b_name="Yamaha" p:loc="japan"></bean>
+	
+	<bean class="edu.jsp.product.Product" id="p1" p:name="R15" p:price="200000.87" p:rating="4.3" p:quantity="15">
+		<property name="brand" ref="b1"/>
+	</bean>
+	
+	<bean class="edu.jsp.product.Product" id="p2" p:name="MT-15" p:price="188090" p:rating="4.0" p:quantity="10">
+		<property name="brand" ref="b1"/>
+	</bean>
+</beans>

@@ -1,0 +1,23 @@
+import java.util.*;
+class Codechef
+{
+    static Scanner sc=new Scanner(System.in);
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		System.out.print("enter a number a :");
+		int a=sc.nextInt();
+		System.out.print("enter a number b :");
+		int b=sc.nextInt();
+		if (1<=a&&a<=100)
+		{
+		    if(1<=a&&b<=6)
+		    {
+		       if((a+b)>6)
+		         System.out.println("YES");
+		        else
+		         System.out.println("NO");
+		    }
+		}
+	}
+}

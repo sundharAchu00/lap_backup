@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+    display: grid;
+    /* grid-template-rows: 200px 200px auto auto auto auto; */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    gap: 5px;
+    color: #ffff;
+    grid-template-areas: "item1 item2 item2 item3"
+    "item1 item4 item5 item8"
+    "item1 item6 item7 item8";
+}
+.item1{
+    grid-area: item1;
+    background-color: aqua;
+}
+.item2{
+    grid-area: item2;
+    background-color: rgb(46, 14, 187);
+}
+.item3{
+    grid-area: item3;
+    background-color: rgb(220, 22, 217);
+}
+.item4{
+    grid-area: item4;
+    background-color: rgb(0, 255, 55);
+}
+.item5{
+    grid-area: item5;
+    background-color: rgb(255, 162, 0);
+}
+.item6{
+    grid-area: item6;
+    background-color: rgb(115, 107, 102);
+}
+.item7{
+    grid-area: item7;
+    background-color: rgb(226, 251, 144);
+}
+.item8{
+    grid-area: item8;
+    background-color: rgb(255, 0, 102);
+}
+/* .items{
+    background-color: blue;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: green;
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: rgb(0, 79, 128);
+}
+.item3{
+    background-color: rgb(69, 70, 69);
+}
+.item4{
+    background-color: rgb(110, 8, 116);
+}
+.item5{
+    background-color: rgb(137, 226, 137);
+}
+.item6{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(188, 0, 59);
+}
+.item7{
+    background-color: rgb(225, 152, 33);
+}
+.item8{
+    background-color: rgb(11, 234, 11);
+}
+.item9{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: brown;
+}
+.item10{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    background-color: rgb(61, 224, 189);
+} */

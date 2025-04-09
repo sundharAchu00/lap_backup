@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <form action="" method="get" autocomplete="off">
+      <label for="Stu_name">Student Name : </label>
+      <input type="text" name="Stu_name" id="Stu_name" required minlength="3" maxlength="17" size="17" autofocus/>
+      <br /><br />
+      <label for="Email">Email : </label>
+      <input type="email" name="Email" id="Email" required placeholder="Enter a valid Email Address" />
+      <br /><br />
+      <label for="Ph_no">Phone_No : </label>
+      <input type="tel" name="Ph_no" id="Ph_no" required minlength="10" maxlength="10"/>
+      <br /><br />
+      <label for="Age">Age : </label>
+      <input type="number" name="Age" id="Age" min="20" max="35"/>
+      <br /><br />
+      <label for="D.O.B">D.O.B : </label>
+      <input type="date" name="D.O.B" id="D.O.B"/>
+      <br /><br />
+      <label for="Pswd">Password : </label>
+      <input type="password" name="Pswd" id="Pswd" required title="Enter A valid Password"/>
+      <br /><br />
+      <label for="Status">Marital Status : </label>
+      <input type="radio" name="Status" checked/>single
+      <input type="radio" name="Status" />Married 
+      <br /><br />
+      <label for="Hob1">Hobbies :</label>
+      <input type="checkbox" name="Hobbies" id="Hob1" checked/>Cricket 
+      <input type="checkbox" name="Hobbies" id="Hob1" />Sleeping
+      <input type="checkbox" name="Hobbies" id="Hob1" />Singing
+      <input type="checkbox" name="Hobbies" id="Hob1" />Drawing
+      <input type="checkbox" name="Hobbies" id="Hob1" />Studying <br /><br />
+      <label for="loc">Location : </label>
+      <select name="loc" id="loc" required>
+        <option value="select any value">Select Any location</option>
+        <option value="chennai">chennai</option>
+        <option value="Madurai">Madurai</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        </select><br />
+      <br />
+      <label for="add">Address : </label>
+      <textarea name="Add" id="add" cols="30" rows="10"></textarea><br />
+      <br /><br />
+      <label for="upload">File : </label>
+      <input type="file" name="upload" id="upload" />
+      <input type="submit" name="submit" id="submit" />
+      <input type="reset" name="reset" id="reset" />
+    </form>
+  </body>
+</html>

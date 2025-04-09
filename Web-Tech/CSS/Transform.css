@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    margin: 40px 100px;
+    /* transform: rotatex(240deg); */
+    /* transform: rotateY(140deg); */
+    /* transform: skewY(30deg); */
+    /* transform: skewX(45deg); */
+    /* transform: scale3d(1,1,6); */
+    transform: scale(1);
+    transform: translate3d(120px,190px,50px);
+}
+/* div:hover{ */
+    /* transform:scale(0.9); */
+/* } */

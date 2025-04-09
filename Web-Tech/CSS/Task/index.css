@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0%;
+}
+/* header starts here*/
+.container{
+    height: 50vh;
+    width: 100%;
+    /* border: 2px solid yellow; */
+}
+.incontainer{
+    height: 50vh;
+    width: 90%;
+    /* border: 2px solid; */
+    border-bottom: 4px double grey;
+    margin: 0% auto;
+}
+.container > .incontainer > .nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    padding: 30px 0px;
+}
+.container > .incontainer > .nav > ul > li {
+    list-style: none;
+}
+.container > .incontainer > .nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(128,128,128);
+    /* padding-left: 50px; */
+}
+.container > .incontainer > .nav > ul > li > a > i{
+    /* padding-right: 15px; */
+    text-shadow: 2px 2px 1px rgb(172, 166, 166);
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    color: rgb(229, 222, 222);
+    border-radius: 50%;
+    /* box-shadow: 1px 2px 0px 0px rgb(229, 222, 222); */
+}
+.container > .incontainer > .nav > ul > li > a > span{
+    /* display: block; */
+    margin-left: 15px;
+}
+.container > .incontainer > .head > h1{
+    /* box-shadow: 0px 2px 0px 1px rgb(229, 222, 222); */
+    padding-top: 70px;
+    color:tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 0.8px 4px 0px rgb(128,128,128);
+    letter-spacing: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container > .incontainer > .head > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+/* header ends here */

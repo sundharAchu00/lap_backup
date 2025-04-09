@@ -1,0 +1,9 @@
+DAO ---> DB logics
+
+DTO --->  Entity Classes
+
+Service ---> Bussiness Logic
+
+Controller ---> Place Where the Program starts
+
+

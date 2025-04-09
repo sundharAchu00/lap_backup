@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./StuReg.css">
+  </head>
+  <body>
+    <form action="">
+      <p><u> Student Registration Form Using Table</u></p>
+        <table>
+          <tr>
+            <td><label for="Fname">First-Name</label></td>
+            <td>
+              <input type="text" name="Fname" id="Fname" maxlength="20" required/>
+            </td>
+            <td>(maximum 20 characters allowed)<br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="Lname">Last Name</label></td>
+            <td>
+              <input type="text" name="Lanme" id="Lname" maxlength="10" />
+            </td>
+            <td>(maximum 10 characters allowed)<br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="Email"></label>Email ID</td>
+            <td>
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                title="Enter a Valid Mail ID"
+                required
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="MNumber">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                name="Mnumber"
+                id="MNumber"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+            </td>
+            <td>(maximum 10 digits allowed)<br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td>
+              <input type="radio" name="Male" id="Gender" />Male
+              <input type="radio" name="Female" id="Gender" />Female<br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="DOB">Date Of Birth(DOB)</label></td>
+            <td><input type="date" id="DOB"/><br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="Address">Address</label></td>
+            <td>
+              <textarea
+                name="Address"
+                id="Address"
+                cols="30"
+                rows="10"
+              ></textarea
+              ><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="City">City</label></td>
+            <td><input type="text" name="City" id="City" maxlength="50" /></td>
+            <td>(Max 50 characters allowed) <br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="Pincode">Pincode </label></td>
+            <td>
+              <input type="text" name="Pincode" id="Pincode" maxlength="6" />
+            </td>
+            <td>(Max 6 Number allowed)<br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="state">State</label></td>
+            <td><input type="text" name="state" id="state" /></td>
+            <td>(Max 50 characters allowed)<br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                value="India"
+                readonly
+              />
+              <br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="hobbies">Hobbies</label></td>
+            <td>
+              <input type="checkbox" name="drawing" id="hobbies" />Drawing
+              <input type="checkbox" name="singing" id="hobbies" />Singing
+              <input type="checkbox" name="dancing" id="hobbies" />Dancing
+              <input type="checkbox" name="sketching" id="hobbies" />Sketching
+              <br />
+              <label for="others">Others</label>
+              <input
+                type="text"
+                name="others"
+                id="extra"
+                placeholder="eg:Teaching"
+              /><br /><br />
+            </td>
+            <td>(Max 50 characters allowed)<br /><br /></td>
+          </tr>
+          <tr>
+            <td><label for="qualification">Qualification</label></td>
+            <td>
+              <input
+                type="checkbox"
+                name="highschool"
+                id="qualification"
+              />HighSchool(10th) <br />
+              <input
+                type="checkbox"
+                name="highschool"
+                id="qualification"
+              />HighSchool(10th) <br />
+              <input
+                type="checkbox"
+                name="higherschool"
+                id="qualification"
+              />HigherSchool(12th) <br />
+              <input
+                type="checkbox"
+                name="graduation"
+                id="qualification"
+              />Gradutation(Bachelors) <br />
+              <input
+                type="checkbox"
+                name="postgraduation"
+                id="qualification"
+              />PostGraduation(masters) <br />
+              <input
+                type="checkbox"
+                name="doctrate"
+                id="qualification"
+              />Doctrate(PhD) <br />
+              <br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="courses">Courses <br />Applied For</label>
+            </td>
+            <td>
+              <input type="radio" name="BCA" id="courses" />BCA(Bachelors of
+              Computer Applications) <br />
+              <input type="radio" name="BCA" id="courses" />B.Com(Bachelors of
+              Commmerce) <br />
+              <input type="radio" name="BCA" id="courses" />B.sc(Bachelors of
+              Science) <br />
+              <input type="radio" name="BCA" id="courses" />BA(Bachelors of
+              Arts) <br />
+              <input type="radio" name="BCA" id="courses" />MCA(Master of
+              Computer Applications) <br />
+              <input type="radio" name="BCA" id="courses" />M.COM(Master of
+              Commerce) <br />
+              <input type="radio" name="BCA" id="courses" />MSC(Master of
+              Science) <br />
+              <input type="radio" name="BCA" id="courses" />MA(Master of arts)
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="submit" id="submit" />
+              <input type="reset" value="reset" id="reset" />
+            </td>
+          </tr>
+        </table>
+    </form>
+  </body>
+</html>

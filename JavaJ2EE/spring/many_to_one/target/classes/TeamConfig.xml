@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="edu.jsp.team.Players" id="p1" p:name="Mahendra Singh Dhoni" p:age="42" p:role="captain ,WK" />
+	<bean class="edu.jsp.team.Players" id="p2" p:name="Virat Kolhi" p:age="36" p:role="vice captain" />
+	<bean class="edu.jsp.team.Players" id="p3" p:name="Rohit Sharma" p:age="37" p:role="batsmen" />
+	
+	<bean class="edu.jsp.team.Team" id="t1" p:name="CSK" p:noOfPlayers="11">
+		
+		<property name="map">
+			<map>
+				<entry key="7" value-ref="p1"/>
+				<entry key="18" value-ref="p2"/>
+				<entry key="45" value-ref="p3"/>
+			</map>
+		</property>	
+	</bean>
+
+</beans>

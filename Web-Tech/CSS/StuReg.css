@@ -1,0 +1,16 @@
+p{
+    color: blue;
+    /* display: flex;
+    justify-content: center;*/
+    text-align: center;
+}
+table{
+    border-style: dashed;
+    border-color: black;
+    background:-webkit-linear-gradient(rgb(74, 200, 241),rgb(247, 75, 236))
+}
+form{
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+}

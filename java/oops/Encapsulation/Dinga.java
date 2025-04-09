@@ -1,0 +1,14 @@
+class Dinga {
+	public String sname="Dinga";
+	public double smarks=78;
+	int age=18;
+	private String gf="mangi";
+	
+	public void m1(){
+		//Dinga ref1=new Dinga();
+		System.out.println(sname);
+		System.out.println(smarks);
+		System.out.println(age);
+		System.out.println(gf);
+       }
+}

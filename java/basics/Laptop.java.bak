@@ -1,0 +1,54 @@
+import java.util.*;
+class Laptop
+{
+	String Lname,Lprocessor,Lmodel,Lstorage,Lram;
+	double Lprice;
+	Laptop()
+	{
+		System.out.println("Im No-args Const");
+	}
+	Laptop(String nm,String mdl,String prsr,String str,String rm,double pri)
+	{
+		Lname=nm;
+		Lprocessor=prsr;
+		Lmodel=mdl;
+		Lstorage=str;
+		Lram=rm;
+		Lprice=pri;
+		System.out.println("Im the Initialization constructor I'm done");
+	}
+
+	public void laptopDetails()
+	{
+		System.out.println("Laptop Name :"+Lname);
+		System.out.println("Laptop Model :"+Lmodel);
+		System.out.println("Laptop Processor :"+Lprocessor);
+		System.out.println("Laptop Storage :"+Lstorage);
+		System.out.println("Laptop RAM :"+Lram);
+		System.out.println("Laptop price :"+Lprice);
+		System.out.println("******************");
+	}
+}
+class LaptopDriver
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		Laptop l1=new Laptop();
+		System.out.println(l1);
+		System.out.println("*****************");
+		System.out.println("Enter a Laptop Name : ");
+		String n1=sc.nextLine();
+		System.out.println("Enter a Laptop Model : ");
+		String mod=sc.nextLine();
+		System.out.println("Enter a Processor : ");
+		String pro=sc.nextLine();
+		System.out.println("Enter a Storage : ");
+		String st=sc.nextLine();
+		System.out.println("Enter a RAM : ");
+		String ram=sc.nextLine();
+		System.out.println("Enter a Price : ");
+		double pri=sc.nextInt();
+		Laptop l2=new Laptop(n1,mod,pro,st,ram,pri);
+	}
+}

@@ -1,0 +1,21 @@
+class EvenMagic 
+{
+	public static void main(String[] args) 
+	{
+		int i=100,num=1;
+		String s1="java",s2="sql";
+		while (i>=2)
+		{
+			if (num%1==1)
+			{
+				System.out.println(i+"-"+s1);
+			}
+			else
+			{
+				System.out.println(i+"-"+s2);
+			}
+			i-=2;
+			num++;
+		}
+	}
+}

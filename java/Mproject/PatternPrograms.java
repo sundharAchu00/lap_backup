@@ -1,0 +1,301 @@
+import java.util.*;
+class PatternPrograms 
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)throws Exception 
+	{
+		boolean b=true;
+		System.out.println("Welcome to Pattern Programming projects...........");
+		Thread.sleep(1000);
+		do
+		{
+		System.out.println("1.printing stars(5*5)\n2.printing 1-5 and reverse\n3.printing * and Alphabet\n4.printing abc &123 triangle\n5.Printing a mixed triangle\n6.triangle 1\n7.triangle 2\n8.triangle 3\n9.triangle 4.\n10.some Special\n11.Exit");
+		int n=sc.nextInt();
+		switch (n)
+		{
+		case 1:{
+			Star();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 2:{
+			print5();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 3:{
+			pat3();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 4:{
+			printAbc123();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 5:{
+			TriMix();
+			break;}
+		case 6:{
+			Tri1();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 7:{
+			Tri2();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 8:{
+			Tri3();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 9:{
+			Tri4();
+			System.out.println();
+			Thread.sleep(1000);
+			break;}
+		case 10:{
+			PatLove();
+			break;}
+		case 11:{
+			b=false;
+			break;}
+		default:{
+			System.out.println("Selection out of Range");
+			break;}
+		}
+			}
+		while (b);
+	}
+	public static void Star()
+	{
+		int n=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (true)
+				{
+					System.out.print("*  ");
+				}
+				else
+				{
+					System.out.print("   ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+	public static void print5()throws Exception
+	{
+		int n=5,s=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=1;j<=n ;j++ )
+			{
+				if (i%2==0)
+				{
+					Thread.sleep(500);
+					System.out.print(s-- +"  ");
+				}
+				else
+				{
+					System.out.print(j+"  ");
+				}
+			}
+			System.out.println();
+			s=5;
+		}
+	}
+
+	public static void printAbc123()
+	{
+		int n=5,num=1;
+		char ch='A';
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (ch=='D')
+				{
+					ch='A';
+				}
+				else if (num==4)
+				{
+					num=1;
+				}
+				if (i+j<=n-1)
+				{
+				if (i%2==0)
+				{
+					System.out.print(ch++ +" ");
+				}
+				else
+				{
+					System.out.print(num++ +" ");
+				}
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pat3()throws Exception
+	{
+		int n=5;
+		char ch='A';
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (j%2==0)
+				{  
+					Thread.sleep(500);
+					System.out.print("* ");
+				
+				}
+				else
+				{
+					Thread.sleep(500);
+					System.out.print(ch++ +" ");
+				}
+			}
+			System.out.println();
+		}
+		
+	}
+	public static void Tri1()
+	{
+		int n=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (i<=j&&i+j>=n-1)
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public static void TriMix()
+	{
+		int n=11;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (i>=j&&i+j<=n-1)
+				{
+					System.out.print((char)2+"    ");
+				}
+				else if (i<=j&&i+j<=n-1)
+				{
+					System.out.print((char)3+"    ");
+				}
+				else if (i<=j&&i+j>=n-1)
+				{
+					System.out.print((char)4+"    ");
+				}
+				else if(i>=j&&i+j>n-1)
+				{
+					System.out.print((char)5+"    ");
+				}
+			}
+			System.out.println();
+			System.out.println();
+		}
+	}
+	public static void Tri2()
+	{
+		int n=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (i>=j&&i+j<=n-1)
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public static void Tri3()
+	{
+		int n=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (i>=j&&i+j>=n-1)
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public static void Tri4()
+	{
+		int n=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (i<=j&&i+j<=n-1)
+				{
+					System.out.print("* ");
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+	}
+	}
+	public static void PatLove()throws Exception
+	{
+		int n=5;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=0;j<n ;j++ )
+			{
+				if (i==0&&j==1||i==0&&j==3||i==1&&j==0||i==1&&j==2||i==1&&j==4||i==2&&j==0||i==2&&j==4||i==3&&j==1||i==3&&j==3||i==4&&j==2)
+				{
+					Thread.sleep(150);
+					System.out.print("*    ");
+				}
+				else
+				{
+					Thread.sleep(100);
+					System.out.print("     ");
+				}
+			}
+			Thread.sleep(150);
+			System.out.println();
+			System.out.println();
+	}
+	}
+}

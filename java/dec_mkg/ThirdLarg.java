@@ -1,0 +1,341 @@
+import java.util.*;
+class ThirdLarg
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Value for a: ");
+		int a=sc.nextInt();
+		System.out.println("Enter Value for b: ");
+		int b=sc.nextInt();
+		System.out.println("Enter Value for c: ");
+		int c=sc.nextInt();
+		System.out.println("Enter Value for d: ");
+		int d=sc.nextInt();
+		System.out.println("Enter Value for e: ");
+		int e=sc.nextInt();
+
+		if (a>b && a>c && a>d && a>e)//assuming a is largest.
+		{
+			if(b>c && b>d && b>e)//second largest
+			{
+				if (c>d && c>e)
+				{
+					System.out.println(c+" : is the 3rd Largest");
+				}
+				else if (d>e && d>c)
+				{
+					System.out.println(d+" : is the 3rd Largest");
+				}
+				else if (e>c && e>d)
+				{
+					System.out.println(e+" : is the third largest ");
+				}
+			}
+			else if(c>d && c>e &&  c>b)
+			{
+				if(d>e&&d>b)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+				else if(e>b&&e>d)
+				{
+					System.out.println(e+" :is the 3rd Largest ");
+				}
+				else if(b>d&&b>e)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+			}
+			else if(d>e && d>b &&  d>c)
+			{
+				if(d>e&&d>b)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+				else if(e>b&&e>d)
+				{
+					System.out.println(e+" :is the 3rd Largest ");
+				}
+				else if(b>d&&b>e)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+			}
+			else if(e>b && e>c &&  e>d)
+			{
+				if(b>c && b>d)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+				else if(c>d && c>b)
+				{
+					System.out.println(c+" :is the 3rd Largest ");
+				}
+				else if(d>b && d>c)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+			}
+		}
+
+		else if (b>a && b>c && b>d && b>e)//assuming b is largest.
+		{
+			if (a>c && a>d && a>e)
+			{
+				if(c>d && c>e)
+				{
+					System.out.println(c+" : is the 3rd Largest");
+				}
+				else if (d>e && d>c)
+				{
+					System.out.println(d+" : is the 3rd Largest");
+				}
+				else if (e>c && e>d)
+				{
+					System.out.println(e+" : is the third largest ");
+				}
+			}
+		 else if (c>a && c>d && c>e)
+			{ 
+				if (b>d && b>e)
+				{
+					System.out.println(b+" : is the 3rd Largest");
+				}
+				else if (d>e && d>b)
+				{
+					System.out.println(d+" : is the third largest ");
+				}
+	
+				else if (e>b && e>d)
+				{
+					System.out.println(e+" : is the third largest ");
+				}
+			}
+		    else if(d>e && d>a && d>c)
+			{
+				if (e>a && e>c)
+				{
+					System.out.println(e+" : is the 3rd Largest");
+				}
+				else if (a>c && a>e)
+				{
+					System.out.println(a+" : is the 3rd Largest");
+				}
+				else if (c>e && c>a)
+				{
+					System.out.println(c+" : is the third largest ");
+				}
+			}
+			else if(e>a && e>c &&  e>d)
+			{
+				if(a>c && a>d)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+				else if(c>d && c>a)
+				{
+					System.out.println(c+" :is the 3rd Largest ");
+				}
+				else if(d>a && d>c)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+			}
+		}
+		else if (c>a && c>b && c>d && c>e)//assuming c is largest.
+		{
+			if(a>b && a>d && a>e)
+			{
+				if (b>d && b>e)
+				{
+					System.out.println(b+" : is the 3rd Largest");
+				}
+				else if (d>e && d>b)
+				{
+					System.out.println(d+" : is the 3rd Largest");
+				}
+				else if (e>b && e>d)
+				{
+					System.out.println(e+" : is the third largest ");
+				}
+			}
+			else if(b>d && b>e &&  b>a)
+			{
+				if(d>e && d>a)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+				else if(e>a && e>d)
+				{
+					System.out.println(e+" :is the 3rd Largest ");
+				}
+				else if(a>d && a>e)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+			}
+			else if(d>e && d>a &&  d>b)
+			{
+				if(e>a && e>b)
+				{
+					System.out.println(e+" :is the 3rd Largest ");
+				}
+				else if(a>b && a>e)
+				{
+					System.out.println(e+" :is the 3rd Largest ");
+				}
+				else if(b>e && b>a)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+			}
+			else if(e>a && e>b &&  e>d)  //(c>a && c>b && c>d && c>e)//assuming c is largest.
+			{
+				if(a>b && a>d)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+				else if(b>d && b>a)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+				else if(d>a && d>b)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+			}
+		}
+		
+		else if (d>a && d>b && d>c && d>e)//assuming d is largest.
+		{
+			if (a>b && a>c && a>e)
+			{
+				if(b>c && b>e)
+				{
+					System.out.println(b+" : is the 3rd Largest");
+				}
+				else if (c>e && c>b)
+				{
+					System.out.println(c+" : is the 3rd Largest");
+				}
+				else if (e>b && e>c)
+				{
+					System.out.println(e+" : is the third largest ");
+				}
+			}
+		 else if (b>c && b>e && b>a)
+			{ 
+				if (c>e && c>a)
+				{
+					System.out.println(c+" : is the 3rd Largest");
+				}
+				else if (e>a && e>c)
+				{
+					System.out.println(e+" : is the third largest ");
+				}
+	
+				else if (a>c && a>e)
+				{
+					System.out.println(a+" : is the third largest ");
+				}
+			}
+		    else if(c>e && c>a && c>b)
+			{
+				if (e>a && e>b)
+				{
+					System.out.println(e+" : is the 3rd Largest");
+				}
+				else if (a>b && a>e)
+				{
+					System.out.println(a+" : is the 3rd Largest");
+				}
+				else if (b>e && b>a)
+				{
+					System.out.println(b+" : is the third largest ");
+				}
+			}
+			else if(e>a && e>b &&  e>c)
+			{
+				if(a>b && a>c)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+				else if(b>c && b>a)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+				else if(c>a && c>b)
+				{
+					System.out.println(c+" :is the 3rd Largest ");
+				}
+			}
+		}
+	else if(e>a && e>b && e>c && e>d)//assuming e is the largest
+		{
+			if(a>b && a>c && a>d)
+			{
+				if(b>c && b>d)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+				else if(c>d && c>b)
+				{
+					System.out.println(c+" :is the 3rd Largest ");
+				}
+				else if(d>b && d>c)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+			}
+			else if(b>c && b>d && b>a)
+			{
+				if(c>d && c>a)
+				{
+					System.out.println(c+" :is the 3rd Largest ");
+				}
+				else if(d>a && d>c)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+				else if(a>c && a>d)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+				
+			}
+			else if(c>d && c>a && c>b)
+			{
+				if(d>a && d>b)
+				{
+					System.out.println(d+" :is the 3rd Largest ");
+				}
+				else if(a>b && a>d)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+				else if(b>d && b>a)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+				
+			}
+			else if(d>a && d>b && d>c)
+			{
+				if(a>b && a>c)
+				{
+					System.out.println(a+" :is the 3rd Largest ");
+				}
+				else if(b>c && b>a)
+				{
+					System.out.println(b+" :is the 3rd Largest ");
+				}
+				else if(c>a && c>b)
+				{
+					System.out.println(c+" :is the 3rd Largest ");
+				}
+				
+			}
+		}
+	}
+}

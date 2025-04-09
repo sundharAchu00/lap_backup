@@ -1,0 +1,29 @@
+class Patterns1 
+{
+	public static void main(String[] args) 
+	{ 
+		int n=5,numi=1,numj=2;
+		for(int i=0;i<n;i++){
+			for(int j=0;j<n;j++){
+				if(i==0){
+					System.out.print(" "+numi++);
+				}else if (j==0)
+				{
+					System.out.print(" "+ numj++);
+				}else if(i==n-1){
+					if (numj==6)
+					{
+						numj=5;
+					}
+					System.out.print(" "+ --numj);
+				}else if (j==n-1)
+				{
+					System.out.print(" "+ --numi);
+				}else{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./sclReggform.css">
+</head>
+<body>
+    <div>
+       <form action="">
+        <table>
+            <th>After School Club Registration Form</th><br>
+            <tr>
+                <td><label for="name">Student's Name</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="Name" id="name" placeholder="First Name" required>
+                <input type="text" placeholder="last Name"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Student Birth Date</label></td>
+            </tr>
+            <tr >
+                <td colspan="2"><input type="date" name="dob1" id="dob" class="Wbox" placeholder="MM/DD/YYYY" required></td>
+            </tr>
+            <tr>
+                <td><label for="grade">Student's Grade</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><select name="grad" id="grade" class="Wbox" required>
+                    <option value="kinder Garden" id="grade">kinder Garden</option>
+                    <option value="grade 1" id="grade">Grade 1</option>
+                    <option value="Grade 2" id="grade">Grade 2</option>
+                    <option value="Grade 3" id="grade">Grade 3</option>
+                    <option value="Grade 4" id="grade">Grade 4</option>
+                    <option value="grade 5" id="grade">Grade 5</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="session">Which Session Will your Student Attend?</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="session1" id="session" checked>Full-time Before School Care only</td>
+            </tr>
+            <tr>    
+                <td><input type="radio" name="session2" id="session">Full-time After School Care only</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="session3" id="session">Full-time Before and After School Care only</td>
+            </tr>
+            </tr>
+                <td><input type="radio" name="session4" id="session">Drop-in Before AND/OR After School Care</td>
+            </tr>
+            <tr>
+                <td><label for="healthissues">Please indicate Any Known allergies or Special needs</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea name="healthissues" id="healthissues" cols="45" rows="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Pname">Parent/Guardian Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="Pname" placeholder="FirstName" required>
+                <input type="text" id="Pname" placeholder="LastName" ></td>
+            </tr>
+            <tr>
+                <td><label for="Pfname">Parent/Guardian Name</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" placeholder="FullName"></td>
+            </tr>
+            <tr>
+                <td><label for="additNum">Additional Phone Number</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" id="additNum" placeholder="### ### ####" class="Wbox"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="email" name="email" id="email" placeholder=aaaaaaaaaaa@mail.com class="Wbox"></td>
+            </tr>
+            <th colspan="2">Authorized Pick Up List<hr></th>
+            <tr>
+                <td><label for="Pickname">Name</label></td>
+            </tr>
+            <tr><td><input type="text" id="Pickname" placeholder="firts">
+            <input type="text" id="Pickname" placeholder="last" ></td>
+        </tr>
+        <tr>
+            <td><label for="Pnumber">Phone Number</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="Pnumber" class="Wbox"></td>
+        </tr>
+        <tr>
+            <td><label for="relation">Relationship</label></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" id="relation" placeholder="#############" class="Wbox"></td>
+        </tr>
+        </table><br><br>
+        <button value="submit" class="button">Submit</button>
+        <button value="Reset" class="button">Reset</button>
+       </form>
+    </div>
+</body>
+</html>

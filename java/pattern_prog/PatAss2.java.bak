@@ -1,0 +1,27 @@
+class PatAss2 
+{
+	public static void main(String[] args) throws Exception
+	{
+		int n=5,s=1;
+		for (int i=0;i<n ;i++ )
+		{
+			for (int j=1;j<=n ;j++ )
+			{
+				if (true)
+				{
+					Thread.sleep(500);
+					System.out.print(s++ +"  ");
+					if (s>7s)
+					{
+						s=1;
+					}
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

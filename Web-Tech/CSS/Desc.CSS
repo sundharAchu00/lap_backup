@@ -1,0 +1,18 @@
+p{
+    color: coral;
+}
+div section p{
+    background-color: black;
+    color: aqua;
+}
+div>p{
+    color: yellow;
+    background-color: blue;
+}
+div+p{
+    color: blueviolet;
+    background-color: aqua;
+}
+div~p{
+    color: chartreuse;
+}

@@ -1,0 +1,19 @@
+import java.util.*;
+class MyNeMagic 
+{
+	public static void main(String[] args) 
+	{
+		int a=1,b=65;
+		while (b<=90)
+		{
+			if (a%2==0)
+			{
+				System.out.println(a+"*"+(char)b+"="+a);
+			}
+			else
+			{
+				System.out.println((char)b+"*"+a+"="+a);
+			}
+		}
+	}
+}

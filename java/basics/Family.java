@@ -1,0 +1,83 @@
+class Family 
+{
+	public static void main(String[] args) throws Exception 
+	{
+		System.out.println("\t\t Hello I\'M Sundhar Raj...!");
+		Thread.sleep(3000);
+		System.out.println("\t\t My Father And Mother Name are...");
+		Thread.sleep(2000);
+		System.out.println("G SOUNDHAR RAJAN");
+		Thread.sleep(1000);
+		System.out.println("S MUHULAKSHMI");
+		System.out.println("**********THANK YOU***********");
+	}
+}
+
+class BestFri 
+{
+	public static void main(String[] args) throws Exception 
+	{
+		System.out.println("\t\t My best Friend Name Is...!");
+		Thread.sleep(2000);
+		System.out.println("\t\t Vishwa...");
+		Thread.sleep(1000);
+		System.out.println("He Always Stood For Me Irrespective Of Situatons");
+		Thread.sleep(1000);
+		System.out.println("**********THANK YOU***********");
+	}
+}
+
+class Laptop
+{
+	public static void main(String[] args)throws Exception
+	{
+		String name="lenovo";
+		String model="e5400";
+		String MOF="2022";
+		String RAM="8gb";
+		String storage="256gb";
+		System.out.println("Name of the laptop : "+name);
+		Thread.sleep(1000);
+		System.out.println("Model No : "+model);
+		Thread.sleep(1000);
+		System.out.println("Year Of Manufacture : "+MOF);
+		Thread.sleep(1000);
+		System.out.println("RAM : "+RAM);
+		Thread.sleep(1000);
+		System.out.println("Internal Storage : "+storage);
+		Thread.sleep(1000);
+		System.out.println("************");
+		Thread.sleep(2000);
+
+	}
+}
+
+class FavBike
+{
+	public static void main(String[] args)throws Exception
+	{
+		String bike="Yamaha";
+		String Model="RX100";
+		String MOF="2000";
+		String colour="metallic Blue";
+		System.out.println("Name of the bike :"+bike);
+		Thread.sleep(1000);
+		System.out.println("Model :"+Model);
+		Thread.sleep(1000);
+		System.out.println("year of Manufacturing :"+MOF);
+		Thread.sleep(1000);
+		System.out.println("Colour :"+colour);
+	}
+}
+
+class Call
+{
+	public static void main(String[] args)throws Exception
+	{
+		System.out.println("Welcome..");
+		Family.main(args);
+		BestFri.main(args);
+		Laptop.main(args);
+		FavBike.main(args);
+	}
+}

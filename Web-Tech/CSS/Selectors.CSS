@@ -1,0 +1,18 @@
+/* div{
+    color: brown;
+} */
+/* #demo{
+    color: aquamarine;
+}
+.test{
+    color: yellow;
+}
+.test1{
+    background-color: brown;
+}
+*{
+    font-family: cursive;
+} */
+div,p,section{
+    color: blueviolet;
+}

@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(45deg,rgba(255, 166, 0,0.5),rgba(252, 76, 150,0.5),rgba(234, 255, 0,0.5)),url("https://cdn.pixabay.com/photo/2017/04/08/17/09/motocross-2213772_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.MainContainer{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-areas: "nav nav nav"
+    "summary summary summary"
+    "gallery gallery gallery"
+    "photo1 contact contact"
+    "about about about"
+    "registration registration registration";
+    gap: 2px;
+}
+.nav{
+    width: 100%;
+    grid-area: nav;
+    background-color: rgb(212, 153, 3);
+    display: flex;
+    /* position: fixed; */
+    word-spacing: 12px;
+    padding: 30px 20px;
+}
+.nav > .topheading{
+    padding-left: 50px;
+}
+.nav > ul li{
+    display: inline-flex;
+}
+.nav > ul li a{
+    position: relative;
+    left: 650px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.nav > ul li a:hover{
+    color: black;
+}
+.summary{
+    width: 100%;
+    grid-area: summary;
+    /* background-color: rgb(8, 116, 73); */
+    /* text-align: justify; */
+    padding-top:40px;
+    padding-left: 30px;
+}
+.summary > p{
+    text-align: justify;
+}
+.summary > img{
+    height:100px;
+    width: 100px;
+    float: right;
+    box-sizing: content-box;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.photo{
+    width: 300px;
+    grid-area: photo;
+    display: flex;
+    /* background-color: rgb(9, 250, 250); */
+}
+.photo > img{
+    height:150px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+.gallery{
+    height: 450px;
+    grid-area: gallery;
+    /* background-color: rgb(0, 88, 139); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery > .heading{
+    flex-basis: 970px;
+    margin: 2px;
+    padding-left: 450px;
+}
+.socialLinks{
+    position: relative;
+    top: 20px;
+    left: 120px;
+}
+.gallery > .Galbutton{
+    position: relative; 
+    top: 170px;
+    left: 100px;
+}
+.p1,.p2,.p3,.p4,.p5,.p6,.p7{
+    object-fit: cover;
+
+}
+.gallery > .Galbutton a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.gallery > .galphoto{
+    padding-top: 10px;
+    object-fit: cover;
+    height: 150px;
+    width: 300px;
+    margin: 5px;
+}
+.photo1{
+    grid-area: photo1;
+    /* background-color: rgb(0, 2, 139); */
+    width:150px;
+    height: 150px;
+}
+.photo1 > img{
+    object-fit: fill;
+    height: 150px;
+    width: 150px;
+}
+.contact{
+    padding-top: 30px;
+    width: 1110px;
+    grid-area: contact;
+    /* background-color: rgb(205, 52, 239); */
+    /* display: flex; */
+}
+#Contact{
+    position: relative;
+    left: 900px;
+}
+.Conbutton{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.about{
+    grid-area: about;
+    height: 400px;
+    padding-top: 40px;
+    /* background-color: rgb(228, 7, 184); */
+}
+.registration{
+    height: 100%;
+    width: 100%;
+    grid-area: registration;
+    /* background-image: linear-gradient(45deg,aqua,rgb(242, 149, 78)); */
+}
+.registration > .reg{
+    height: 400px;
+    width: 400px;
+    /* background-color: white; */
+    background-image: linear-gradient(45deg,rgba(255, 170, 0,0.5),rgba(238, 25, 139,0.5));
+    border: 2px solid;
+    border-radius: 10px;
+    margin: auto;
+}
+.registration > .RegHeading{
+    text-align: center;
+}
+.lastButtons{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    color: antiquewhite;
+    position: relative;
+    left: 525px;
+}
+.lastButtons > button a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}

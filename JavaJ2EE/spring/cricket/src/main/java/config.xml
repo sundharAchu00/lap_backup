@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="edu.jsp.cricket.Teams" id="team" p:id="1" p:name="CSK" p:owner="Srinivasan" p:color="yellow" p:no_of_players="11">
+		<property name="player_names">
+			<list>
+				<value>MSD</value>
+				<value>Jadeja</value>
+				<value>Ruturaj</value>
+				<value>D Chahar</value>
+				<value>Devon Conway</value>
+				<value>Moeen Ali</value>
+				<value>DJ Bravo</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

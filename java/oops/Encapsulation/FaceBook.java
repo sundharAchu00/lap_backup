@@ -1,0 +1,26 @@
+import java.util.*;
+class FaceBook
+{
+	static boolean b=true;
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)throws Exception{
+do {
+			System.out.println("1.Account Details\n2.Transactions\n3.Exit");
+			int n=sc.nextInt();
+			Thread.sleep(500);
+			switch(n) {
+				case 1:{
+					//long ANo=ac.getAcc_no();
+					//String ANm=ac.getAcc_holerName();
+					Thread.sleep(500);
+					break;}
+				case 2:{break;}
+				case 3:{
+					b=false;
+					break;}
+				default:{break;}
+			}
+			
+		}while(b);
+  }
+}

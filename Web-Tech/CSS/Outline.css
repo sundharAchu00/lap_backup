@@ -1,0 +1,41 @@
+div>p{
+    width: 200px;
+    height: 1000px;
+    background-color: bisque;
+    margin: 100px 200px;
+    border: 2px solid red;
+    outline-width: 2px;
+    outline-color: green;
+    outline-style: dotted;
+    outline: 2px dotted green;
+    outline-offset: 10px;
+    word-break: break-all;
+}
+
+h1{
+    text-align: center;
+}
+/* p{
+    text-transform: lowercase;
+    text-decoration: dotted;
+    text-indent: 20px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;text over flow hidden
+    text-decoration: underline; 
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    word-break: break-all;
+    border-color: black; 
+}*/
+a{
+    color: white;
+}
+button{
+    height: 30px;
+    width: 100px;
+    background-color: tomato;
+    border-style: none;
+    border-radius: 50px;
+    
+}
